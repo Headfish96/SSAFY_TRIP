@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/css/header.css" />
+    <link rel="stylesheet" href="./asset/css/footer.css" />
+    <link rel="stylesheet" href="./asset/css/detail.css" />
+    <title>여행지 상세보기</title>
+  </head>
+  <body>
+    <!-- 헤더 시작 - 로고이미지, 검색창, 로그인, 회원가입 -->
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <a href="./index.html"><img src="./asset/img/ssafy_logo.png" alt="" /></a>
+        </div>
+        <div class="title">SSAFY TRIP</div>
+        <div class="top-right-header">
+          <div class="info-box">
+            <div><a href="./signin.html">로그인</a></div>
+            <div><a href="./signup.html">회원가입</a></div>
+            <div><a href="./userinfo.html">회원정보수정</a></div>
+          </div>
+          <div class="search-box">
+            <input class="search-input" type="text" placeholder="여행지를 검색하세요" />
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <!-- 네비게이션 바 - 지역 선택 -->
+        <ul class="nav-list">
+          <li><a href="./list.html">인기여행지</a></li>
+          <li><a href="./list.html">추천여행지</a></li>
+          <li><a href="./search-info.html">지역별관광지조회</a></li>
+          <li><a href="#">나만의여행계획</a></li>
+          <li><a href="#">핫플레이스등록</a></li>
+          <li><a href="#">정보공유게시판</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 시작 -->
+    <main>
+      <div class="banner-img">
+        <img id="bannerImg" class="image" alt="" />
+      </div>
+      <div class="map-container">
+        <div class="map" id="map"></div>
+        <div class="description">
+          <h2 id="description-title">description-title</h2>
+          <p id="description-subtext">description-subtext</p>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <div class="deatil-head">
+          <h3 id="detailTitle">detail title</h3>
+        </div>
+        <div class="addr">
+          <img style="height: 20px; margin-right: 10px" src="./asset/img/marker.png" alt="" /><span
+            id="addr"
+          ></span>
+        </div>
+        <div id="imgContainer" class="detail-img-container"></div>
+      </div>
+    </main>
+    <!-- 메인 끝 -->
+
+    <!-- footer 시작 -->
+    <footer class="container">
+      <div class="flex-container">
+        <div>
+          <h1>SSAFY TRIP</h1>
+          <div class="footer_trip">
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s
+            </div>
+            <div>
+              <h3>CHY & SCW</h3>
+              <br />
+              <div>
+                <img src="./asset/img/footer_sns_logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>Links</h1>
+          <div class="footer_links">
+            <ul>
+              <li>Discover</li>
+              <li>Special Deals</li>
+              <li>Services</li>
+              <li>Community</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h1>Servise</h1>
+          <div class="footer_services">
+            <ul>
+              <li>About Us</li>
+              <li>Blog & Articles</li>
+              <li>Term and Condition</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h1>Contact</h1>
+          <div class="footer_contact">
+            <ul>
+              <li>Address: DaeJeon</li>
+              <li>SSAFY 9th class 6</li>
+              <li>Phone: 123 456 7890</li>
+              <li>Email: Ssafy09@ssafy.com</li>
+              <li>Maps: east sea</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab247539589d9974c85afb1f6a94ef26"
+    ></script>
+    <script src="./asset/js/detail.js"></script>
+    <script></script>
+  </body>
+</html>
